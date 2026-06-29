@@ -26,3 +26,35 @@ nav {
   gap: 25px;
   align-items: center;
 }
+
+.section-padding {
+  padding: 50px 0;
+}
+/* Intro content */
+
+.intro-img-container {
+  width: 450px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.intro-section {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.intro-content-container {
+  display: flex;
+  align-items: center; /* or stretch */
+  gap: 30px;
+}
+
+.intro-img-container img {
+  max-width: 100%;
+  height: auto; /* Maintains aspect ratio */
+  max-height: 100%; /* Ensures image doesn't exceed container height */
+}
+
+.intro-text {
+  flex: 1; /* Takes remaining space */
+}
