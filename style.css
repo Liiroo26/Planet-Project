@@ -1,4 +1,18 @@
 /* Global Styling */
+@font-face {
+  font-family: "nasalization";
+  src: url("font/nasalization-rg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+h1 {
+  font-family: "nasalization", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 37px;
+  color: white;
+}
 
 * {
   margin: 0;
@@ -6,23 +20,35 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
 html {
   scroll-behavior: smooth;
+}
+
+a {
+  font-family: "poppins", sans-serif;
+  font-style: regular;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  font-family: "nasalization", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  color: white;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  position: sticky;
   top: 0;
   z-index: 1000; /* Ensures navbar stays above other content */
-  background-color: #333;
+  backdrop-filter: blur(10px); /* Adds a blur effect to the background */
   width: 100%;
   padding: 10px;
+  color: white;
 }
 
 .links-container {
@@ -34,42 +60,141 @@ nav {
 .section-padding {
   padding: 50px 0;
 }
-/* Intro content */
 
-.intro-img-container {
-  width: 450px;
-  height: 250px;
+/* Intro content */
+.intro-container {
+  flex: 1;
+  /* border: 1px solid #ccc; */
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  margin: 0 20px;
+  min-height: 100%;
+  padding: 20px;
+}
+.intro-video-container {
+  width: 500px;
+  height: 300px;
   overflow: hidden;
 }
 
 .intro-section {
-  padding-left: 30px;
-  padding-right: 30px;
+  display: flex;
+  background-image: url("images/planet-saturn.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  padding: 0 20px;
 }
-
 .intro-content-container {
+  flex: 1;
   display: flex;
   align-items: center; /* or stretch */
   gap: 30px;
 }
 
-.intro-img-container img {
+.intro-video-container video {
   max-width: 100%;
   height: auto; /* Maintains aspect ratio */
-  max-height: 100%; /* Ensures image doesn't exceed container height */
+  max-height: 100%; /* Ensures video doesn't exceed container height */
 }
 
 .intro-text {
+  font-family: "poppins", sans-serif;
+  font-style: regular;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
   flex: 1; /* Takes remaining space */
 }
 
-div.scroll-container {
-  background-color: #333;
+/* Home content */
+.home-section {
+  display: flex;
+  flex-direction: column;
+  background-image: url("images/saturnhome.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  padding: 0 20px;
+}
+
+.home-content-container {
+  flex: 1;
+  /* border: 1px solid #ccc; */
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  margin: 20px 20px 0 20px;
+  min-height: 100%;
+}
+
+.home-title {
+  font-family: "nasalization", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+
+.home-paragraph {
+  font-family: poppins, sans-serif;
+  font-style: regular;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Gallery content */
+.gallery-section {
+  display: flex;
+  background-image: url("images/saturnrings.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  padding: 0 20px;
+}
+
+.gallery-content-container {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  margin: 0 20px;
+  min-height: 100%;
+  flex-wrap: nowrap; /* Prevents images from wrapping to the next line */
+  overflow-x: auto; /* Enables horizontal scrolling */
+  padding: 50px 10px 50px 10px;
+}
+.scroll-container {
   overflow: auto;
   white-space: nowrap;
+  padding: 0px;
+}
+
+.scroll-container img {
   padding: 10px;
 }
 
-div.scroll-container img {
-  padding: 10px;
+/* Bottom nav */
+.bottom-nav {
+  display: flex;
+  flex-direction: column;
+  background-image: url("images/saturnverical.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  padding: 0 20px;
+}
+
+.bottom-nav-content-container {
+  flex: 1;
+  /* border: 1px solid #ccc; */
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 20px 0 20px;
+  min-height: 100%;
 }
