@@ -203,9 +203,8 @@ nav {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  margin: 0px 20px;
+  margin: 0px 20px 20px 20px;
   min-height: 100%;
-  /* padding: 0px 0px; */
 }
 
 .bottom-content-container {
@@ -213,4 +212,17 @@ nav {
   flex-direction: column;
   justify-content: flex-end; /* Aligns content to the bottom */
   align-items: center; /* Centers content horizontally */
+}
+
+footer {
+  font-family: arial, sans-serif;
+  font-style: regular;
+  font-size: 14px;
+  position: relative;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 0px 20px 0px;
 }
