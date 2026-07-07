@@ -27,7 +27,7 @@ html {
 a {
   font-family: "poppins", sans-serif;
   font-style: regular;
-  font-weight: 400;
+  font-size: 12px;
   text-decoration: none;
   color: white;
 }
@@ -45,7 +45,7 @@ nav {
   justify-content: space-between;
   /* top: 0; */
   /* z-index: 1000; Ensures navbar stays above other content */
-  /* backdrop-filter: blur(10px); Adds a blur effect to the background */
+  backdrop-filter: blur(10px); /* Adds a blur effect to the background */
   width: 100%;
   padding: 10px;
   color: white;
@@ -83,6 +83,9 @@ nav {
   width: 500px;
   height: 300px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .intro-section {
