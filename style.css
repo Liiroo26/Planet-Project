@@ -43,14 +43,22 @@ a {
 nav {
   display: flex;
   justify-content: space-between;
-  top: 0;
-  z-index: 1000; /* Ensures navbar stays above other content */
-  backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+  /* top: 0; */
+  /* z-index: 1000; Ensures navbar stays above other content */
+  /* backdrop-filter: blur(10px); Adds a blur effect to the background */
   width: 100%;
   padding: 10px;
   color: white;
 }
 
+.nav-top {
+  top: 0;
+  z-index: 1000; /* Ensures navbar stays above other content */
+}
+
+.nav-bottom {
+  bottom: 0;
+}
 .links-container {
   display: flex;
   gap: 25px;
@@ -178,7 +186,7 @@ nav {
 }
 
 /* Bottom nav */
-.bottom-nav {
+.bottom-section {
   display: flex;
   flex-direction: column;
   background-image: url("images/saturnverical.jpg");
@@ -186,15 +194,23 @@ nav {
   background-size: cover;
   background-position: center;
   min-height: 600px;
-  padding: 0 20px;
+  padding: 0px 20px;
 }
 
-.bottom-nav-content-container {
+.bottom-content-container {
   flex: 1;
   /* border: 1px solid #ccc; */
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  margin: 20px 20px 0 20px;
+  margin: 0px 20px;
   min-height: 100%;
+  /* padding: 0px 0px; */
+}
+
+.bottom-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Aligns content to the bottom */
+  align-items: center; /* Centers content horizontally */
 }
