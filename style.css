@@ -43,7 +43,7 @@ a {
 nav {
   display: flex;
   justify-content: space-between;
-  /* top: 0; */
+  top: 0;
   /* z-index: 1000; Ensures navbar stays above other content */
   backdrop-filter: blur(10px); /* Adds a blur effect to the background */
   width: 100%;
@@ -177,6 +177,17 @@ nav {
   flex-wrap: nowrap; /* Prevents images from wrapping to the next line */
   overflow-x: auto; /* Enables horizontal scrolling */
   padding: 50px 10px 50px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-scroll-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px; /* Space between images */
+  padding: 10px 0; /* Optional padding for aesthetics */
+  flex: 1; /* Ensures the container takes up available space */
+  align-items: center; /* Centers images vertically if they have different heights */
 }
 .scroll-container {
   overflow: auto;
