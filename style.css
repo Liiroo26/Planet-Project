@@ -143,14 +143,14 @@ nav {
 }
 /* Text-Link */
 .intro-link {
-  font-family: "poppins", sans-serif
+  font-family: "poppins", sans-serif;
   font-style: italic;
   color: white;
 }
 
 /* Website Link */
 .nasa-website {
-color:whitesmoke
+  color: whitesmoke;
 }
 /* Home content */
 .home-section {
